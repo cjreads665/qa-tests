@@ -26,28 +26,11 @@ kubectl get service
 minikube service frontend-service
 ```
 
-6. Copy the URL for the frontend-service tunnel
+6. Create a .env file
 
-7. Navigate to cypress.config.js in root directory
+7. add the frontend url as CYPRESS_BASE_URL in the .env file
 
-8. Paste the copied URL in "baseUrl".
-
-**Verification:**
-
-- Ensure the frontend service can successfully communicate with the backend service.
-- Verify that accessing the frontend URL displays the greeting message fetched from the backend.
-
-**Automated Testing:**
-
-- Write a simple test script (using a tool of your choice) to verify the integration between the frontend and backend services.
-- The test should check that the frontend correctly displays the message returned by the backend.
-
-**Documentation:**
-
-- Provide a README file with instructions on how to set up and run the automated tests script.
-
-**Deliverables:**
-- Test script for automated testing.
-- README file with setup and execution instructions.
-
-**Github repo should be Public**
+8. run the following in the roor directory to run the test.
+ ```bash
+npx cypress run
+```

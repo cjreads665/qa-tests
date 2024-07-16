@@ -1,10 +1,13 @@
 const { defineConfig } = require("cypress");
-
+require('dotenv').config()
 module.exports = defineConfig({
-  baseUrl: "http://127.0.0.1:42733",
+  env:{
+    vars : {...process.env} //FOR OTHER VALUES IF ANY
+  },
   e2e: {
     setupNodeEvents(on, config) {
       // implement node event listeners here
     },
+    baseUrl: process.env.CYPRESS_BASE_URL
   },
 });
