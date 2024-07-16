@@ -28,9 +28,9 @@ minikube service frontend-service
 
 6. Copy the URL for the frontend-service tunnel
 
-7. Navigate to cypress/e2e/helloWorld.js
+7. Navigate to cypress.config.js in root directory
 
-8. Paste the copied URL in 
+8. Paste the copied URL in "baseUrl".
 
 **Verification:**
 
