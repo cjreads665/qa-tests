@@ -26,7 +26,11 @@ kubectl get service
 minikube service frontend-service
 ```
 
-6. Create a .env file
+6. Run the following in the CLI and create a .env file or use the existing one.
+
+```bash
+npm i
+```
 
 7. add the frontend url as CYPRESS_BASE_URL in the .env file
 
