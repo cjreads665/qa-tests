@@ -1,6 +1,6 @@
 describe('template spec', () => {
   it('passes', () => {
     cy.visit('/')
-    console.log(Cypress.env('vars'));
+    cy.get('h1').contains("Hello from the Backend!")
   })
 })
