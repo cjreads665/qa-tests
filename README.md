@@ -1,6 +1,6 @@
 # qa-test
 
-**Kubernetes Deployment:**
+**Frontend Tests**
 
 Deploy the services to a local Kubernetes cluster (e.g., Minikube or Kind).
 1. Open CLI in the cloned repository. Also make sure docker is running.
@@ -37,4 +37,20 @@ npm i
 8. run the following in the roor directory to run the test.
  ```bash
 npx cypress run
+```
+
+**Scripts in Python**
+
+1. Install the packages in requirements.txt
+```bash
+pip install -r requirements.txt
+```
+
+2. Run the programs using :
+```bash
+python3 py-health-linux.py
+```
+
+```bash
+python3 py-health-request.py
 ```
